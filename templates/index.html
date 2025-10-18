@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </nav>
+        <h1>Stock Market Predictor</h1>
+        <form id="prediction-form">
+            <input type="text" id="ticker" placeholder="Stock Ticker (e.g., AAPL)" required>
+            <input type="text" id="start-date" placeholder="Start Date (YYYY-MM-DD)" required>
+            <input type="text" id="end-date" placeholder="End Date (YYYY-MM-DD)" required>
+            <button type="submit">Predict</button>
+            <label>
+                <input type="checkbox" id="force-retrain">
+                Force Retrain
+            </label>
+        </form>
+        <div id="results">
+            <div id="metrics"></div>
+            <canvas id="price-chart"></canvas>
+        </div>
+
+        <hr>
+
+        <div id="historical-analysis">
+            <h2>Historical Prediction Analysis</h2>
+            <form id="historical-form">
+                <input type="text" id="historical-date" placeholder="Select a Date (YYYY-MM-DD)" required>
+                <button type="submit">Check Prediction</button>
+            </form>
+            <div id="historical-result"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
