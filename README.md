@@ -14,6 +14,10 @@ It leverages **pandas**, **scikit-learn**, and **yfinance** to fetch data, train
 
 ---
 
+## Screanshots
+<img width="1366" height="724" alt="Screenshot (168)" src="https://github.com/user-attachments/assets/b2ffeaba-53ae-4d8d-aee7-5756cc6470c0" />
+
+
 ## 🧰 Tech Stack
 | Library | Purpose |
 |----------|----------|
